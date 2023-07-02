@@ -1,0 +1,26 @@
+@use '../abstract/mixins' as *;
+@use '../abstract/variables' as *;
+
+.home-nav{
+    background-color: $wine;
+    @include flexbox($justify: space-between);
+    padding: 10px 50px;
+
+    .nav-right{
+        ul{
+            @include flexbox;
+            // gap: 2em;
+
+            a{
+                color: $white;
+                padding: 15px 30px;
+                font-weight: bold;
+
+                &:hover{
+                    background-color: $orange;
+                    transition: .5s ease-in-out;
+                }
+            }
+        }
+    }
+}

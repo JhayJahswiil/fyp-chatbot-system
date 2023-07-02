@@ -1,0 +1,18 @@
+@use './assets/styles/base/base';
+@use './assets/styles/base/reset';
+@use './assets/styles/base/typography';
+
+@use './assets/styles/abstract/mixins';
+@use './assets/styles/abstract/variables';
+
+@use './assets/styles/component/buttons';
+@use './assets/styles/component/navbar';
+
+@use './assets/styles/layout/footer';
+@use './assets/styles/layout/header';
+
+@use './assets/styles/pages/home';
+@use './assets/styles/pages/about';
+@use './assets/styles/pages/faq';
+@use './assets/styles/pages/contact';
+@use './assets/styles/pages/bot';

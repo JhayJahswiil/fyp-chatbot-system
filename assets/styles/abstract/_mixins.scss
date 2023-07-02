@@ -1,0 +1,28 @@
+// Mixins styles
+
+// Flexbox
+@mixin flexbox($display: flex, $justify: center, $align: center, $direction: row){
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+// Media Query
+@mixin media($px){
+    @if $px == tablet{
+        @media screen and (max-width: 600px) {
+            @content;
+        }
+    }
+    @else if $px == mobile{
+        @media screen and (max-width: 375px) {
+            @content;
+        }
+    }
+    @else if $px == small-mobile{
+        @media screen and (max-width: 280px) {
+            @content;
+        }
+    }
+}

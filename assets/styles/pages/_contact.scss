@@ -1,0 +1,29 @@
+@use '../abstract/mixins' as *;
+@use '../abstract/variables' as *;
+
+.contact-sect{
+    margin-top: 5em;
+    
+    form{
+        text-align: center;
+
+        input[type="text"], input[type="email"], textarea{
+            margin: 30px auto;
+            display: block;
+            width: 50%;
+            border-radius: 4px;
+            border: none;
+            border-bottom: 1px solid $wine;
+            padding: 6px;
+            outline: none;
+            resize: none;
+
+            &::placeholder{
+                font-size: 10px;
+                padding: 8px;
+                color: $black-2;
+                font-weight: lighter;
+            }
+        }
+    }
+}

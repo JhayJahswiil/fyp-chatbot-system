@@ -1,0 +1,33 @@
+@use '../abstract/mixins' as *;
+@use '../abstract/variables' as *;
+
+.about-main-sec{
+    padding-inline: 4em;
+    margin-top: 2em;
+
+    .about-sect{ 
+
+        h2{
+            text-align: center;
+        }
+        &-text{
+            background-color: rgba(0, 0, 0, 0.093);
+            padding: 10px 20px;
+            border-radius: 10px;
+            
+            h4{
+                margin-top: 20px;
+                text-decoration: underline;
+                font-size: 20px;
+            }
+
+            p, li{
+                line-height: 1.5;
+                margin-top: 10px;
+            }
+            hr{
+                margin-top: 20px;
+            }
+        }
+    }
+}
