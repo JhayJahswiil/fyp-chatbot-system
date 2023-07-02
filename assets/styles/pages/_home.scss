@@ -37,7 +37,35 @@
                         color: $black-2;
                     }
                 }
+
+                //media
+                @include media(tablet){
+                    width: 95%;
+                }
+
+                @include media(small-tablet){
+                    width: 95%;
+                }
+
+                @include media(mobile){
+                    width: 95%;
+                }
             }
+
+            // media
+            @include media(tablet){
+                @include flexbox($direction:column);
+            }
+        }
+
+        // media
+        @include media(small-tablet){
+            padding-inline: 2em;
+        }
+
+        // media
+        @include media(mobile){
+            padding-inline: 1.2em;
         }
     }
 }
@@ -51,10 +79,9 @@
 
 .btn-group-contents{
     margin-top: 30px;
-    // overflow-y: scroll;
     background-color: rgba(212, 200, 200, 0.426);
     border-radius: 10px;
-    padding: 20px;
+    padding: 2px;
 
     .step{
         margin: 30px;
@@ -88,6 +115,11 @@
 
     video{
         border-radius: 10px;
+
+        // media
+        @include media(small-tablet){
+            width: 95%;
+        }
     }
 }
 

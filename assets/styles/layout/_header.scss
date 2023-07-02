@@ -33,6 +33,7 @@
                 p{
                     font-size: 16px;
                     margin-top: -15px;
+                    margin-bottom: 50px;
                 }
             }
 
@@ -54,6 +55,16 @@
                         transition: .5s ease-in-out;
                     }
                 }
+
+                // media
+                @include media(big-tablet){
+                    display: none;
+                }
+            }
+
+            // media
+            @include media(tablet){
+                text-align: center;
             }
         }
 

@@ -21,6 +21,19 @@
                     transition: .5s ease-in-out;
                 }
             }
+
+            // media
+            @include media(small-tablet){
+                @include flexbox($direction: column);
+                gap: 20px;
+            }
         }
+    }
+
+    // media
+    @include media(tablet){
+        @include flexbox($justify: center, $direction:column);
+        flex-wrap: wrap;
+        gap: 10px;
     }
 }

@@ -23,6 +23,12 @@ ul {
 }
 
 .btn-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 5px;
+  flex-wrap: wrap;
   margin-top: 30px;
   text-align: center;
 }
@@ -30,7 +36,7 @@ ul {
 .btn {
   padding: 15px;
   background-color: #FFAE11;
-  width: 20%;
+  width: 150px;
   border: none;
   cursor: pointer;
   font-weight: bold;
@@ -84,6 +90,25 @@ ul {
   background-color: #FFAE11;
   transition: 0.5s ease-in-out;
 }
+@media screen and (max-width: 550px) {
+  .home-nav .nav-right ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 740px) {
+  .home-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
 
 .footer-sec {
   margin-top: 5em;
@@ -130,12 +155,12 @@ ul {
   -webkit-text-decoration: underline #FFFFFF;
           text-decoration: underline #FFFFFF;
 }
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 740px) {
   .footer-sec .cols .col {
     margin-top: 25px;
   }
 }
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 740px) {
   .footer-sec .cols {
     display: flex;
     justify-content: center;
@@ -188,6 +213,7 @@ ul {
 .header-sec .hero .hero-section-content p {
   font-size: 16px;
   margin-top: -15px;
+  margin-bottom: 50px;
 }
 .header-sec .hero .hero-section-socials {
   transform: rotate(90deg);
@@ -205,6 +231,16 @@ ul {
   background-color: #FFAE11;
   border: 1px solid #981B1B;
   transition: 0.5s ease-in-out;
+}
+@media screen and (max-width: 860px) {
+  .header-sec .hero .hero-section-socials {
+    display: none;
+  }
+}
+@media screen and (max-width: 740px) {
+  .header-sec .hero .hero-section {
+    text-align: center;
+  }
 }
 .header-sec .hero .mySwiper {
   width: 100%;
@@ -264,6 +300,39 @@ ul {
   margin-top: 5px;
   color: rgba(59, 60, 61, 0.9176470588);
 }
+@media screen and (max-width: 740px) {
+  .main-sec section .about-cards .about-card {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .main-sec section .about-cards .about-card {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .main-sec section .about-cards .about-card {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 740px) {
+  .main-sec section .about-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 550px) {
+  .main-sec section {
+    padding-inline: 2em;
+  }
+}
+@media screen and (max-width: 380px) {
+  .main-sec section {
+    padding-inline: 1.2em;
+  }
+}
 
 .active-btn {
   background-color: #981B1B;
@@ -274,7 +343,7 @@ ul {
   margin-top: 30px;
   background-color: rgba(212, 200, 200, 0.426);
   border-radius: 10px;
-  padding: 20px;
+  padding: 2px;
 }
 .btn-group-contents .step {
   margin: 30px;
@@ -300,6 +369,11 @@ ul {
 }
 .demo-video video {
   border-radius: 10px;
+}
+@media screen and (max-width: 550px) {
+  .demo-video video {
+    width: 95%;
+  }
 }
 
 .cta {
@@ -343,7 +417,7 @@ ul {
   line-height: 1.5;
   margin-top: 10px;
 }
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 740px) {
   .about-main-sec .about-sect-text p, .about-main-sec .about-sect-text li {
     font-size: 17px;
   }
@@ -351,12 +425,12 @@ ul {
 .about-main-sec .about-sect-text hr {
   margin-top: 20px;
 }
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 740px) {
   .about-main-sec {
     padding-inline: 1.3em;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 380px) {
   .about-main-sec {
     padding-inline: 1.1em;
     text-align: justify;
@@ -388,22 +462,22 @@ ul {
   margin-top: 10px;
   line-height: 1.2;
 }
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 740px) {
   .faq-main-sec .faq-sect .faqs .faq p {
     font-size: 17px;
   }
 }
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 740px) {
   .faq-main-sec .faq-sect .faqs {
     padding: 10px 10px;
   }
 }
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 740px) {
   .faq-main-sec .faq-sect {
     padding-inline: 1.3em;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 380px) {
   .faq-main-sec .faq-sect {
     padding-inline: 1.1em;
   }
@@ -438,7 +512,7 @@ ul {
   color: rgba(59, 60, 61, 0.9176470588);
   font-weight: lighter;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 380px) {
   .contact-sect form input[type=text], .contact-sect form input[type=email], .contact-sect form textarea {
     width: 70%;
   }

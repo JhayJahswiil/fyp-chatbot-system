@@ -10,13 +10,23 @@
 
 // Media Query
 @mixin media($px){
-    @if $px == tablet{
-        @media screen and (max-width: 680px) {
+    @if $px == big-tablet{
+        @media screen and (max-width: 860px) {
+            @content;
+        }
+    }
+    @else if $px == tablet{
+        @media screen and (max-width: 740px) {
+            @content;
+        }
+    }
+    @else if $px == small-tablet{
+        @media screen and (max-width: 550px) {
             @content;
         }
     }
     @else if $px == mobile{
-        @media screen and (max-width: 375px) {
+        @media screen and (max-width: 380px) {
             @content;
         }
     }
