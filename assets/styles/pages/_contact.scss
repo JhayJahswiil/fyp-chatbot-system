@@ -24,6 +24,11 @@
                 color: $black-2;
                 font-weight: lighter;
             }
+
+            // media
+            @include media(mobile){
+                width: 70%;
+            }
         }
     }
 }

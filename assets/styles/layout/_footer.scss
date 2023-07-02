@@ -52,6 +52,16 @@
                     }
                 }
             }
+
+            // media
+            @include media(tablet){
+                margin-top: 25px;
+            }
+        }
+
+        // media
+        @include media(tablet){
+            @include flexbox($align: flex-start, $direction: column);
         }
     }
 

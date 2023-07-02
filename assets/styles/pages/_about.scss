@@ -24,10 +24,25 @@
             p, li{
                 line-height: 1.5;
                 margin-top: 10px;
+
+                // media
+                @include media(tablet){
+                    font-size: 17px;
+                }
             }
             hr{
                 margin-top: 20px;
             }
         }
+    }
+
+    // media
+    @include media(tablet){
+        padding-inline: 1.3em;
+    }
+
+    @include media(mobile){
+        padding-inline: 1.1em;
+        text-align: justify;
     }
 }

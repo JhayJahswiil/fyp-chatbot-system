@@ -1,3 +1,6 @@
+@use '../abstract/mixins' as *;
+@use '../abstract/variables' as *;
+
 .faq-main-sec{
     .faq-sect{
         margin-top: 2em;
@@ -25,8 +28,25 @@
                 p{
                     margin-top: 10px;
                     line-height: 1.2;
+
+                    // media
+                    @include media(tablet){
+                        font-size: 17px;
+                    }
                 }
             }
+            // media
+            @include media(tablet){
+                padding: 10px 10px;
+            }
+        }
+        // media
+        @include media(tablet){
+            padding-inline: 1.3em;
+        }
+
+        @include media(mobile){
+            padding-inline: 1.1em;
         }
     }
 }
