@@ -271,7 +271,7 @@ ul {
   position: absolute;
   top: 0;
   width: 100%;
-  min-height: 79vh;
+  height: 79vh;
   z-index: 1;
   min-height: 75vh;
   color: #FFFFFF;
@@ -290,6 +290,11 @@ ul {
 .header-sec .hero .hero-section-content h1 span {
   color: #FFAE11;
 }
+@media screen and (max-width: 380px) {
+  .header-sec .hero .hero-section-content h1 {
+    font-size: 2.5em;
+  }
+}
 .header-sec .hero .hero-section-content p {
   font-size: 16px;
   margin-top: -15px;
@@ -298,6 +303,12 @@ ul {
 @media screen and (max-width: 740px) {
   .header-sec .hero .hero-section-content p {
     margin-top: -2px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .header-sec .hero .hero-section-content p {
+    padding-inline: 20px;
+    line-height: 1.5;
   }
 }
 .header-sec .hero .hero-section-socials {
@@ -329,7 +340,7 @@ ul {
 }
 .header-sec .hero .mySwiper {
   width: 100%;
-  min-height: 79vh;
+  height: 79vh;
   opacity: 0.3;
   position: relative;
 }
