@@ -623,12 +623,14 @@ ul {
 
 .thanks {
   background: url(/assets/images/confetti.gif);
+  padding-inline: 20px;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   color: #981B1B;
+  text-align: center;
 }
 .thanks h2 {
   border: 1px solid rgba(255, 0, 0, 0.262);

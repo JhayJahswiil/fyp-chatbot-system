@@ -3,10 +3,11 @@
 
 .thanks{
     background: url(/assets/images/confetti.gif);
-    // background-color: rgba(46, 0, 0, 0.376);
+    padding-inline: 20px;
     height: 100vh;
     @include flexbox($direction: column);
     color: $wine;
+    text-align: center;
 
     h2{
         border: 1px solid rgba(255, 0, 0, 0.262);
