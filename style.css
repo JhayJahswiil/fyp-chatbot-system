@@ -79,7 +79,9 @@ ul {
   color: #FFFFFF;
 }
 .home-nav .nav-left a small {
+  display: inline-block;
   font-size: 10px;
+  padding-right: 16px;
 }
 .home-nav .nav-right ul {
   display: flex;
@@ -104,6 +106,14 @@ ul {
     text-align: center;
   }
 }
+@media screen and (max-width: 380px) {
+  .home-nav .nav-right ul li {
+    padding: 20px;
+    margin: 12px;
+    width: 100%;
+    text-align: center;
+  }
+}
 @media screen and (max-width: 740px) {
   .home-nav .nav-right ul {
     display: flex;
@@ -117,7 +127,16 @@ ul {
   .home-nav .nav-right {
     position: absolute;
     right: -280px;
-    top: 4em;
+    top: 83px;
+    z-index: 99;
+    transition: 0.7s ease-in-out;
+  }
+}
+@media screen and (max-width: 380px) {
+  .home-nav .nav-right {
+    position: absolute;
+    right: -280px;
+    top: 89px;
     z-index: 99;
     transition: 0.7s ease-in-out;
   }
@@ -127,6 +146,15 @@ ul {
     background-color: #981B1B;
     height: 92vh;
     width: 280px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .home-nav .nav-right {
+    background-color: #981B1B;
+    height: 92vh;
+    width: 220px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
   }
@@ -146,6 +174,11 @@ ul {
 .home-nav .open {
   right: 0;
   transition: 0.7s ease-in-out;
+}
+@media screen and (max-width: 740px) {
+  .home-nav {
+    padding: 20px 15px;
+  }
 }
 
 .footer-sec {
@@ -238,7 +271,7 @@ ul {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 79vh;
+  min-height: 79vh;
   z-index: 1;
   min-height: 75vh;
   color: #FFFFFF;
@@ -296,7 +329,7 @@ ul {
 }
 .header-sec .hero .mySwiper {
   width: 100%;
-  height: 79vh;
+  min-height: 79vh;
   opacity: 0.3;
   position: relative;
 }
