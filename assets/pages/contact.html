@@ -71,8 +71,16 @@
                     <textarea name="message" id="contact-message" placeholder="Your message"></textarea>
                 </div>
 
+                <!-- redirect to the contact page after submission -->
                 <input type="hidden" name="_next"
                     value="https://fyp-chatbot-system.netlify.app/assets/pages/contact.html">
+
+                <!-- hide reCaptcha -->
+                <input type="hidden" name="_captcha" value="false">
+
+                <!-- auto response -->
+                <input type="hidden" name="_autoresponse"
+                    value="Thank you for your message, We would get back to you as soon as possible :)🥂">
 
                 <button type="submit" id="form-btn" class="cta-btn form-btn">SEND</button>
             </form>
