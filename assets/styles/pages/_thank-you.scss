@@ -1,0 +1,18 @@
+@use '../abstract/mixins' as *;
+@use '../abstract/variables' as *;
+
+.thanks{
+    background: url(/assets/images/confetti.gif);
+    // background-color: rgba(46, 0, 0, 0.376);
+    height: 100vh;
+    @include flexbox($direction: column);
+    color: $wine;
+
+    h2{
+        border: 1px solid rgba(255, 0, 0, 0.262);
+        padding: 30px;
+    }
+    a{
+        margin-top: 30px;
+    }
+}

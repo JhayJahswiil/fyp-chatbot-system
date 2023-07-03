@@ -619,4 +619,21 @@ ul {
 }
 .bot-container iframe {
   height: 60vh;
+}
+
+.thanks {
+  background: url(/assets/images/confetti.gif);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #981B1B;
+}
+.thanks h2 {
+  border: 1px solid rgba(255, 0, 0, 0.262);
+  padding: 30px;
+}
+.thanks a {
+  margin-top: 30px;
 }/*# sourceMappingURL=style.css.map */
