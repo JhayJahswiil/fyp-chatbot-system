@@ -1,3 +1,6 @@
+@use '../abstract/mixins' as *;
+@use '../abstract/variables' as *;
+
 .bot-container{
     height: 60vh;
     iframe{
