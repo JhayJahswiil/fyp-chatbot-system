@@ -60,20 +60,19 @@
         <section class="contact-sect">
             <form action="https://formsubmit.co/4591e34e3cdfa8cd6782fb5f8593c61f" class="contact-form" method="POST">
                 <div class="contact-form">
-                    <input type="text" id="contact-name" placeholder="Full Name">
+                    <input type="text" name="name" id="contact-name" placeholder="Full Name">
                 </div>
 
                 <div class="contact-form">
-                    <input type="email" id="contact-email" placeholder="Email">
+                    <input type="email" name="email" id="contact-email" placeholder="Email">
                 </div>
 
                 <div class="contact-form">
-                    <input type="hidden" name="_next" value="https://notes-taker-app-project.netlify.app/">
+                    <textarea name="message" id="contact-message" placeholder="Your message"></textarea>
                 </div>
 
-                <div class="contact-form">
-                    <textarea id="contact-message" placeholder="Your message"></textarea>
-                </div>
+                <input type="hidden" name="_next"
+                    value="https://fyp-chatbot-system.netlify.app/assets/pages/contact.html">
 
                 <button type="submit" id="form-btn" class="cta-btn form-btn">SEND</button>
             </form>
