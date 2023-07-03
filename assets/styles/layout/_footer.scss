@@ -10,6 +10,17 @@
         @include flexbox($justify:space-between);
 
         .col-1{
+            .col-img{
+                color: $white;
+
+                h2{
+                    font-size: 30px;
+                }
+                
+                small{
+                    font-size: 11px;
+                }
+            }
             .col-text{
                 margin-top: 10px;
                 p{

@@ -6,34 +6,84 @@
     @include flexbox($justify: space-between);
     padding: 10px 50px;
 
+    .nav-left{
+        a{
+            color: $white;
+
+            small{
+                font-size: 10px;
+            }
+        }
+    }
     .nav-right{
         ul{
             @include flexbox;
             // gap: 2em;
 
-            a{
-                color: $white;
-                padding: 15px 30px;
-                font-weight: bold;
+            li{
+                a{
+                    color: $white;
+                    padding: 15px 30px;
+                    font-weight: bold;
 
-                &:hover{
-                    background-color: $orange;
-                    transition: .5s ease-in-out;
+                    &:hover{
+                        background-color: $orange;
+                        transition: .5s ease-in-out;
+                    }
+                }
+
+                // media
+                @include media(tablet){
+                    padding: 20px;
+                    margin: 20px;
+                    width: 100%;
+                    text-align: center;
                 }
             }
 
             // media
-            @include media(small-tablet){
+            @include media (tablet){
                 @include flexbox($direction: column);
-                gap: 20px;
-            }
+                    gap: 20px;
+                }
+        }
+
+        // media
+        @include media (tablet){
+            position: absolute;
+            right: -280px;
+            top: 4em;
+            z-index: 99;
+            transition: .7s ease-in-out;
+        }
+
+        // media
+        @include media (tablet){
+            background-color: $wine;
+            height: 92vh;
+            width: 280px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
         }
     }
 
-    // media
-    @include media(tablet){
-        @include flexbox($justify: center, $direction:column);
-        flex-wrap: wrap;
-        gap: 10px;
+    .hamburger{
+        display: none;
+
+        i{
+            color: $white;
+            font-size: 22px;
+        }
+
+        // media
+        @include media (tablet){
+            display: block;
+        }
+    }
+
+    // Hamburger Open class
+    .open{
+        right: 0;
+        transition: .7s ease-in-out;
     }
 }

@@ -75,22 +75,36 @@ ul {
   flex-direction: row;
   padding: 10px 50px;
 }
+.home-nav .nav-left a {
+  color: #FFFFFF;
+}
+.home-nav .nav-left a small {
+  font-size: 10px;
+}
 .home-nav .nav-right ul {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
 }
-.home-nav .nav-right ul a {
+.home-nav .nav-right ul li a {
   color: #FFFFFF;
   padding: 15px 30px;
   font-weight: bold;
 }
-.home-nav .nav-right ul a:hover {
+.home-nav .nav-right ul li a:hover {
   background-color: #FFAE11;
   transition: 0.5s ease-in-out;
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 740px) {
+  .home-nav .nav-right ul li {
+    padding: 20px;
+    margin: 20px;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 740px) {
   .home-nav .nav-right ul {
     display: flex;
     justify-content: center;
@@ -100,14 +114,38 @@ ul {
   }
 }
 @media screen and (max-width: 740px) {
-  .home-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 10px;
+  .home-nav .nav-right {
+    position: absolute;
+    right: -280px;
+    top: 4em;
+    z-index: 99;
+    transition: 0.7s ease-in-out;
   }
+}
+@media screen and (max-width: 740px) {
+  .home-nav .nav-right {
+    background-color: #981B1B;
+    height: 92vh;
+    width: 280px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}
+.home-nav .hamburger {
+  display: none;
+}
+.home-nav .hamburger i {
+  color: #FFFFFF;
+  font-size: 22px;
+}
+@media screen and (max-width: 740px) {
+  .home-nav .hamburger {
+    display: block;
+  }
+}
+.home-nav .open {
+  right: 0;
+  transition: 0.7s ease-in-out;
 }
 
 .footer-sec {
@@ -120,6 +158,15 @@ ul {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+}
+.footer-sec .cols .col-1 .col-img {
+  color: #FFFFFF;
+}
+.footer-sec .cols .col-1 .col-img h2 {
+  font-size: 30px;
+}
+.footer-sec .cols .col-1 .col-img small {
+  font-size: 11px;
 }
 .footer-sec .cols .col-1 .col-text {
   margin-top: 10px;
@@ -214,6 +261,11 @@ ul {
   font-size: 16px;
   margin-top: -15px;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 740px) {
+  .header-sec .hero .hero-section-content p {
+    margin-top: -2px;
+  }
 }
 .header-sec .hero .hero-section-socials {
   transform: rotate(90deg);

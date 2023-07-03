@@ -1,3 +1,5 @@
+// BTN GROUP
+
 const steps_btn = document.querySelector('#step-btn');
 const simplicity_btn = document.querySelector('#simplicity-btn');
 const algorithm_btn = document.querySelector('#algorithm-btn');
