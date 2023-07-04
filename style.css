@@ -1,13 +1,14 @@
-body {
-  width: 100%;
-  overflow-x: hidden;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  position: relative;
 }
 
 p {
@@ -144,7 +145,7 @@ ul {
 @media screen and (max-width: 740px) {
   .home-nav .nav-right {
     background-color: #981B1B;
-    height: 92vh;
+    height: 79vh;
     width: 280px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -153,7 +154,7 @@ ul {
 @media screen and (max-width: 380px) {
   .home-nav .nav-right {
     background-color: #981B1B;
-    height: 92vh;
+    height: 79vh;
     width: 220px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -623,6 +624,9 @@ ul {
 
 .thanks {
   background: url(/assets/images/confetti.gif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-inline: 20px;
   height: 100vh;
   display: flex;

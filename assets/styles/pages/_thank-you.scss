@@ -3,6 +3,9 @@
 
 .thanks{
     background: url(/assets/images/confetti.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding-inline: 20px;
     height: 100vh;
     @include flexbox($direction: column);

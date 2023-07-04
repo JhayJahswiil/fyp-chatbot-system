@@ -78,7 +78,7 @@
         // media
         @include media (tablet){
             background-color: $wine;
-            height: 92vh;
+            height: 79vh;
             width: 280px;
             border-top-left-radius: 10px;
             border-bottom-left-radius: 10px;
@@ -86,7 +86,7 @@
 
         @include media (mobile){
             background-color: $wine;
-            height: 92vh;
+            height: 79vh;
             width: 220px;
             border-top-left-radius: 10px;
             border-bottom-left-radius: 10px;

@@ -10,9 +10,3 @@ bars.addEventListener('click', (e) => {
 
 
 
-// if (navRight.classList.toggle("open")) {
-//     window.addEventListener('click', (e) => {
-//         navRight.style.width = "-250px"
-//         // alert('hi')
-//     })
-// }
