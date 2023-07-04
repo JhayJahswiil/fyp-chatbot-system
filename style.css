@@ -3,12 +3,11 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body {
   width: 100%;
-  position: relative;
+  overflow-x: hidden;
 }
 
 p {
@@ -127,7 +126,8 @@ ul {
 @media screen and (max-width: 740px) {
   .home-nav .nav-right {
     position: absolute;
-    right: -280px;
+    right: 0;
+    display: none;
     top: 83px;
     z-index: 99;
     transition: 0.7s ease-in-out;
@@ -135,8 +135,6 @@ ul {
 }
 @media screen and (max-width: 380px) {
   .home-nav .nav-right {
-    position: absolute;
-    right: -280px;
     top: 89px;
     z-index: 99;
     transition: 0.7s ease-in-out;
@@ -173,7 +171,7 @@ ul {
   }
 }
 .home-nav .open {
-  right: 0;
+  display: initial;
   transition: 0.7s ease-in-out;
 }
 @media screen and (max-width: 740px) {
@@ -268,6 +266,7 @@ ul {
   position: relative;
 }
 .header-sec .hero .hero-section {
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.516);
   position: absolute;
   top: 0;

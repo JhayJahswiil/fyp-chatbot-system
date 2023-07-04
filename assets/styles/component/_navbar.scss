@@ -61,15 +61,14 @@
         // media
         @include media (tablet){
             position: absolute;
-            right: -280px;
+            right: 0;
+            display: none;
             top: 83px;
             z-index: 99;
             transition: .7s ease-in-out;
         }
 
         @include media (mobile){
-            position: absolute;
-            right: -280px;
             top: 89px;
             z-index: 99;
             transition: .7s ease-in-out;
@@ -109,7 +108,8 @@
 
     // Hamburger Open class
     .open{
-        right: 0;
+        // right: 0;
+        display: initial;
         transition: .7s ease-in-out;
     }
 
