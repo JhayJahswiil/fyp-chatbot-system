@@ -1,5 +1,6 @@
 @use '../abstract/mixins' as *;
 @use '../abstract/variables' as *;
+@use '../base/reset';
 
 .header-sec{
     background: $white;
@@ -21,7 +22,7 @@
             @include flexbox($justify: space-between);
 
             &-content{
-                padding-inline: 25px;
+                padding: 0 25px 0 70px;
 
                 h1{
                     max-width: 700px;

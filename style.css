@@ -3,11 +3,11 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   width: 100%;
-  overflow-x: hidden;
 }
 
 p {
@@ -281,7 +281,7 @@ ul {
   flex-direction: row;
 }
 .header-sec .hero .hero-section-content {
-  padding-inline: 25px;
+  padding: 0 25px 0 70px;
 }
 .header-sec .hero .hero-section-content h1 {
   max-width: 700px;
