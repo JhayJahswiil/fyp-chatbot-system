@@ -1,13 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,700;1,200&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
   width: 100%;
+  overflow-x: hidden;
 }
 
 p {
@@ -152,7 +154,7 @@ ul {
 @media screen and (max-width: 380px) {
   .home-nav .nav-right {
     background-color: #981B1B;
-    height: 79vh;
+    height: 89vh;
     width: 220px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -270,7 +272,6 @@ ul {
   background-color: rgba(0, 0, 0, 0.516);
   position: absolute;
   top: 0;
-  width: 100%;
   height: 79vh;
   z-index: 1;
   min-height: 75vh;
@@ -281,11 +282,11 @@ ul {
   flex-direction: row;
 }
 .header-sec .hero .hero-section-content {
-  padding: 0 25px 0 70px;
+  padding: 0 70px 0 70px;
 }
 .header-sec .hero .hero-section-content h1 {
   max-width: 700px;
-  font-size: 3.5em;
+  font-size: 50px;
 }
 .header-sec .hero .hero-section-content h1 span {
   color: #FFAE11;
@@ -297,12 +298,12 @@ ul {
 }
 .header-sec .hero .hero-section-content p {
   font-size: 16px;
-  margin-top: -15px;
+  margin-top: 15px;
   margin-bottom: 50px;
 }
 @media screen and (max-width: 740px) {
   .header-sec .hero .hero-section-content p {
-    margin-top: -2px;
+    margin-top: 12px;
   }
 }
 @media screen and (max-width: 380px) {
@@ -339,7 +340,8 @@ ul {
   }
 }
 .header-sec .hero .mySwiper {
-  width: 100%;
+  overflow-x: hidden !important;
+  max-width: 100%;
   height: 79vh;
   opacity: 0.3;
   position: relative;
@@ -356,8 +358,6 @@ ul {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .main-sec section {
@@ -391,10 +391,12 @@ ul {
   background-color: rgba(255, 176, 17, 0.1098039216);
   padding: 10px;
   line-height: 1.2;
+  font-size: 14px;
 }
 .main-sec section .about-cards .about-card-text p {
   margin-top: 5px;
   color: rgba(59, 60, 61, 0.9176470588);
+  font-size: 15px;
 }
 @media screen and (max-width: 740px) {
   .main-sec section .about-cards .about-card {
@@ -465,31 +467,13 @@ ul {
 }
 .demo-video video {
   border-radius: 10px;
+  width: 60%;
+  height: 40%;
 }
 @media screen and (max-width: 550px) {
   .demo-video video {
     width: 95%;
   }
-}
-
-.cta {
-  width: 70%;
-  margin: auto;
-  text-align: center;
-}
-.cta-text {
-  background: linear-gradient(rgba(46, 41, 41, 0.734), rgba(0, 0, 0, 0.671)), url(/assets/images/cta.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 80px 50px;
-  border-radius: 10px;
-}
-.cta-text h2 {
-  color: #FFFFFF;
-  text-transform: capitalize;
-  line-height: 1.5;
-  margin-bottom: 2em;
 }
 
 .about-main-sec {
@@ -597,16 +581,16 @@ ul {
   resize: none;
 }
 .contact-sect form input[type=text]::-moz-placeholder, .contact-sect form input[type=email]::-moz-placeholder, .contact-sect form textarea::-moz-placeholder {
-  font-size: 10px;
+  font-size: 12px;
   padding: 8px;
   color: rgba(59, 60, 61, 0.9176470588);
-  font-weight: lighter;
+  font-weight: 400;
 }
 .contact-sect form input[type=text]::placeholder, .contact-sect form input[type=email]::placeholder, .contact-sect form textarea::placeholder {
-  font-size: 10px;
+  font-size: 12px;
   padding: 8px;
   color: rgba(59, 60, 61, 0.9176470588);
-  font-weight: lighter;
+  font-weight: 400;
 }
 @media screen and (max-width: 380px) {
   .contact-sect form input[type=text], .contact-sect form input[type=email], .contact-sect form textarea {
@@ -627,7 +611,7 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
   padding-inline: 20px;
-  height: 100vh;
+  height: 79.4vh;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -31,10 +31,13 @@
                     background-color: #ffb0111c;
                     padding: 10px;
                     line-height: 1.2;
+                    font-size: 14px;
+                    // font-weight: 200;
 
                     p{
                         margin-top: 5px;
                         color: $black-2;
+                        font-size: 15px;
                     }
                 }
 
@@ -110,39 +113,18 @@
 
 // Project Demo
 .demo-video{
+    // border: 2px solid red;
     margin-top: 30px;
     text-align: center;
 
     video{
         border-radius: 10px;
+        width: 60%;
+        height: 40%;
 
         // media
         @include media(small-tablet){
             width: 95%;
-        }
-    }
-}
-
-// Call to action
-.cta{
-    width: 70%;
-    margin: auto;
-    text-align: center;
-
-    &-text{
-        background: linear-gradient(rgba(46, 41, 41, 0.734),rgba(0, 0, 0, 0.671)),
-        url(/assets/images/cta.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        padding: 80px 50px;
-        border-radius: 10px;
-
-        h2{
-            color: $white;
-            text-transform: capitalize;
-            line-height: 1.5;
-            margin-bottom: 2em;
         }
     }
 }
